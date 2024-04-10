@@ -1,10 +1,13 @@
-/* body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #242730;
-  color: white;
-} */
+ body {
+
+  background-color:#E6E6FA;
+  color: #720e9e;
+} 
+
+.btn-outline-dark{
+  background-color: #720e9e;
+  color:#E6E6FA;
+}
 
 .tic-tac-toe{
   display: flex;
@@ -13,11 +16,12 @@
 }
 
 h1 {
+  margin-top: -2rem;
   text-align: center;
 }
 
 .board {
-  margin-top: 10px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
@@ -34,11 +38,11 @@ h1 {
 }
 
 .right-border {
-  border-right: 0.2em solid #000000;
+  border-right: 0.2em solid  #720e9e;
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid #000000;
+  border-bottom: 0.2em solid  #720e9e;
 }
 
 .x-hover:hover::after {
@@ -53,7 +57,7 @@ h1 {
 
 .strike {
   position: absolute;
-  background-color: rgb(255, 42, 0);
+  background-color:  #720e9e
 }
 
 .strike-row-1 {
@@ -106,17 +110,26 @@ h1 {
   border: #5468ff 8px;
   /* border-style: dotted; */
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 1.5em;
 }
 
 .reset-button {
   margin-top: 10px;
   padding: 10px;
-  background-color:  rgb(255, 42, 0);
-  border-color:  rgb(255, 42, 0);
+  background-color:   #720e9e;
+  border-color:   #720e9e;
   border-radius: 15px;
   color: white;
   width: 100%;
   font-size: 1em;
+}
+
+.back-btn{
+  margin-left: -65rem;
+  margin-top: 1rem;
+  background-color:   #720e9e;
+  border: 2px solid #720e9e;
+  color:white;
+  border-radius: 4px;
 }

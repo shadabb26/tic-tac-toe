@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Board from "./Board";
 import GameOver from "./GameOver";
 import GameState from "./GameState";
@@ -62,6 +63,7 @@ function TicTacToe() {
   const [playerTurn, setPlayerTurn] = useState(PLAYER_X);
   const [strikeClass, setStrikeClass] = useState();
   const [gameState, setGameState] = useState(GameState.inProgress);
+  const navigate = useNavigate();
 
   useEffect(()=>{
     document.title = 'Multi player'
@@ -110,6 +112,14 @@ function TicTacToe() {
 
   return (
     <div className="tic-tac-toe">
+      <button
+        className="back-btn"
+        onClick={() => {
+          navigate("/home", { replace: true });
+        }}
+      >
+        Back
+      </button>
       <div>
         <h1>Tic Tac Toe</h1>
         <Board
